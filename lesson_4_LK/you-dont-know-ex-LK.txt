@@ -1,0 +1,17 @@
+Check your understanding so far. Make sure to play the part of Engine and have a "conversation" with the Scope:
+
+function foo(a) {
+    var b = a;
+    return a + b;
+}
+
+var c = foo( 2 );
+
+in function(a)...
+var b = LH
+a = RH
+a+b = RH x 2
+
+var c = LH
+foo() = RH
+foo(2) assignied to a = LH
