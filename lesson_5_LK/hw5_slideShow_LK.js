@@ -32,9 +32,8 @@ var Slideshow = function () {
         return this.photoList[this.currentPhotoIndex];
     }.bind(this);
 
-    this.playInterval = function () {
-        setInterval(_this.nextPhoto, 200);
-    };
+    this.playInterval = setInterval(_this.nextPhoto, 200);
+
 
     this.pause = function () {
         clearInterval(_this.playInterval);
@@ -42,5 +41,5 @@ var Slideshow = function () {
 };
 
 var slideshow = new Slideshow();
-slideshow.playInterval();
+//slideshow.playInterval();
 
