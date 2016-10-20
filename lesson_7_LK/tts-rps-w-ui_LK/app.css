@@ -1,0 +1,11 @@
+*{
+  text-align: center;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.player1Choice, .player2Choice{
+  margin-top: 50px;
+}
