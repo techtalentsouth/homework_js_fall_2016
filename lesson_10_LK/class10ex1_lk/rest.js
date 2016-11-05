@@ -11,6 +11,15 @@ $(document).ready(function () {
 
     var postPostBttn = $("#postPostBttn").click(postNewComment);
 
+    var clearBttn = $('#clear').click(function () {
+        var nothing = '';
+        $("#postResult").text(nothing);
+        $("#postIdResult").text(nothing);
+        $("#postIdResult").text(nothing);
+        $("#commIdResult").text(nothing);
+        $("#commPostResult").text(nothing);
+    })
+
     function getAllPosts() {
         $.get('https://jsonplaceholder.typicode.com/posts', function (posts) {
             $("#postResult").text(JSON.stringify(posts));
