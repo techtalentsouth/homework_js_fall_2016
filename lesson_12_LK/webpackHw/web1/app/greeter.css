@@ -1,0 +1,12 @@
+.root {
+  background-color: #eee;
+  padding: 10px;
+  border: 3px solid #ccc;
+  color: blue;
+},
+.root2 {
+  background-color: #eee;
+  padding: 10px;
+  border: 3px solid #ccc;
+  color: red;
+}
