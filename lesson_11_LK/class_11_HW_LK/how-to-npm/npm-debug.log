@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'login' ]
+2 info using npm@3.10.9
+3 info using node@v5.11.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:lrkitto',
+4 verbose adduser   name: 'lrkitto',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'lisarkitto@gmail.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-11-08T22:42:37.164Z' }
+5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:lrkitto
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 5:42:37 PM
+8 verbose request id d3524348f83f30af
+9 http request PUT http://localhost:15443/-/user/org.couchdb.user:lrkitto
+10 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+11 info attempt registry request try #2 at 5:42:47 PM
+12 http request PUT http://localhost:15443/-/user/org.couchdb.user:lrkitto
+13 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+14 info attempt registry request try #3 at 5:43:47 PM
+15 http request PUT http://localhost:15443/-/user/org.couchdb.user:lrkitto
+16 verbose request invalidating /Users/lkittogsuedu/.npm/localhost_15443/-/user/org.couchdb.user_3Alrkitto on PUT
+17 verbose adduser back [ { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+17 verbose adduser     code: 'ECONNREFUSED',
+17 verbose adduser     errno: 'ECONNREFUSED',
+17 verbose adduser     syscall: 'connect',
+17 verbose adduser     address: '127.0.0.1',
+17 verbose adduser     port: 15443 },
+17 verbose adduser   undefined,
+17 verbose adduser   undefined ]
+18 verbose stack Error: connect ECONNREFUSED 127.0.0.1:15443
+18 verbose stack     at Object.exports._errnoException (util.js:893:11)
+18 verbose stack     at exports._exceptionWithHostPort (util.js:916:20)
+18 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1075:14)
+19 verbose cwd /Users/lkittogsuedu/Training/TechTalentSouth/homework_js_fall_2016/lesson_11_LK/how-to-npm
+20 error Darwin 14.5.0
+21 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "login"
+22 error node v5.11.0
+23 error npm  v3.10.9
+24 error code ECONNREFUSED
+25 error errno ECONNREFUSED
+26 error syscall connect
+27 error Error: connect ECONNREFUSED 127.0.0.1:15443
+27 error     at Object.exports._errnoException (util.js:893:11)
+27 error     at exports._exceptionWithHostPort (util.js:916:20)
+27 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1075:14)
+27 error  { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+27 error   code: 'ECONNREFUSED',
+27 error   errno: 'ECONNREFUSED',
+27 error   syscall: 'connect',
+27 error   address: '127.0.0.1',
+27 error   port: 15443 }
+28 error If you are behind a proxy, please make sure that the
+28 error 'proxy' config is set properly.  See: 'npm help config'
+29 verbose exit [ 1, true ]

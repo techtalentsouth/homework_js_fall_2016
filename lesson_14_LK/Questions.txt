@@ -1,0 +1,2 @@
+tower2.js the example code has var character = new Character(+x, +y);
+- WHat is the "+" for?

@@ -1,0 +1,49 @@
+<html>
+<body>
+<header>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <ul>
+        <li class="first">Item 1</li>
+        <li class="selected">Item 2</li>
+        <li class="last">Item 3</li>
+    </ul>
+</header>
+<div class="col">
+    <section>
+        <h2>Section 1</h2>
+    </section>
+    <section class="current">
+        <h2 class="highlight">Section 2</h2>
+    </section>
+    <section>
+        <h1>Section 3</h1>
+    </section>
+</div>
+<script>
+    $(document).ready(function () {
+
+        var header = $("header");
+        var section = $("section");
+        var currentSection = $("section.current");
+        var nextSection = currentSection.next();
+        var h2Node = $("section h2")[0];
+        var div = currentSection.parent();
+        var h2Section = $(section).find("h2");
+        console.log("header = ", header, "\nsection = ", section, "\ncurrentSection = ", currentSection);
+        console.log("\nnextSection = ", nextSection, "\nh2Node = ", h2Node, "\ndiv = ", div, "\nh2Section = ", h2Section);
+    });
+
+    //    Load jQuery (using a CDN)
+    //    Get the top-level header element
+    //    Get all the section elements
+    //    Get the section element with class="current"
+    //    Get the section that comes after the current section
+    //    Get the h2 node from the section before the 'current' section
+    //    Get the div that contains the section that has an h2 with a class of 'highlight'
+    //    Get all the sections that contain an H2 and store them in an Array
+</script>
+</body>
+</html>
